@@ -22,6 +22,9 @@ wheels/
 .venv/
 venv/
 ENV/
+Releases/
+*.exe
+*.app
 
 # IDE
 .idea/
