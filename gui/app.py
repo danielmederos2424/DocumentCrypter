@@ -111,7 +111,7 @@ class EncryptionApp:
         self.page.overlay.append(self.file_picker)
 
         self.file_status = ft.Text("No file selected", color="error", size=14)
-        self.encrypt_btn = ft.ElevatedButton("Encrypt", icon=ft.Icons.LOCK, disabled=True)
+        self.encrypt_btn = ft.ElevatedButton("Encrypt", icon=ft.icons.LOCK, disabled=True)
         self.encrypt_btn._handle_click = lambda pwd, pb: self.handle_encryption(self.current_file, pwd, pb)
 
         self.encrypt_view = build_encrypt_view(
@@ -153,7 +153,7 @@ class EncryptionApp:
         self.page.overlay.append(self.file_picker)
 
         self.file_status = ft.Text("No file selected", color="error", size=14)
-        self.decrypt_btn = ft.ElevatedButton("Decrypt", icon=ft.Icons.LOCK_OPEN, disabled=True)
+        self.decrypt_btn = ft.ElevatedButton("Decrypt", icon=ft.icons.LOCK_OPEN, disabled=True)
         self.decrypt_btn._handle_click = lambda pwd, pb: self.handle_decryption(self.current_file, pwd, pb)
 
         self.decrypt_view = build_decrypt_view(

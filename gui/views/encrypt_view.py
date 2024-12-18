@@ -30,7 +30,7 @@ def build_encrypt_view(show_main_view, file_picker, file_status, encrypt_btn):
         controls=[
             ft.Container(
                 content=ft.Row([
-                    ft.IconButton(icon=ft.Icons.ARROW_BACK, on_click=lambda _: show_main_view()),
+                    ft.IconButton(icon=ft.icons.ARROW_BACK, on_click=lambda _: show_main_view()),
                     ft.Text("Encrypt File", size=24, weight=ft.FontWeight.BOLD),
                 ]),
                 margin=ft.margin.only(bottom=20),
@@ -41,7 +41,7 @@ def build_encrypt_view(show_main_view, file_picker, file_status, encrypt_btn):
                         ft.Container(height=80),
                         ft.ElevatedButton(
                             "Select File",
-                            icon=ft.Icons.UPLOAD_FILE,
+                            icon=ft.icons.UPLOAD_FILE,
                             on_click=lambda _: file_picker.pick_files(
                                 allowed_extensions=['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx']
                             ),

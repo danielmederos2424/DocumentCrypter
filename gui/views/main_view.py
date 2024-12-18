@@ -9,7 +9,7 @@ def build_main_view(show_encrypt_view, show_decrypt_view):
                 [
                     ft.ElevatedButton(
                         "Encrypt Document",
-                        icon=ft.Icons.LOCK,
+                        icon=ft.icons.LOCK,
                         on_click=lambda _: show_encrypt_view(),
                         style=ft.ButtonStyle(
                             shape=ft.RoundedRectangleBorder(radius=10),
@@ -20,7 +20,7 @@ def build_main_view(show_encrypt_view, show_decrypt_view):
                     ),
                     ft.ElevatedButton(
                         "Decrypt Image",
-                        icon=ft.Icons.LOCK_OPEN,
+                        icon=ft.icons.LOCK_OPEN,
                         on_click=lambda _: show_decrypt_view(),
                         style=ft.ButtonStyle(
                             shape=ft.RoundedRectangleBorder(radius=10),

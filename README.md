@@ -32,7 +32,7 @@ A Python desktop application for secure document encryption. Transforms document
 
 ```
 Python 3.12+
-flet>=0.21.0
+flet==0.24.1
 cryptography>=42.0.0
 Pillow>=10.0.0
 pypdf>=4.0.0
@@ -80,4 +80,4 @@ python main.py
 - Binary data stored in image pixels
 - Original file extension preserved in filename
 
-See instructions in the official Flet documentation to build the app https://flet.dev/docs/publish/
+See instructions in the official Flet documentation to build the app https://flet.dev/docs/publish/ or use Pyinstaller (not recommended).
